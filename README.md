@@ -1,8 +1,20 @@
 # Prework Assignment
 
-## Getting Started
+## Step 1: Fork This Repository
 
-### 1. Start the Jupyter Notebook
+**You must fork this repository to your own GitHub account before starting.**
+
+1. Click the **Fork** button at the top right of this page
+2. Clone your forked repository to your local machine:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/0-prework-assignment.git
+cd 0-prework-assignment
+```
+
+## Step 2: Run the Jupyter Notebook
+
+Start the notebook server:
 
 ```bash
 docker-compose up --build
@@ -10,21 +22,29 @@ docker-compose up --build
 
 Open your browser to **http://localhost:8888**
 
-### 2. Complete the Assignment
+## Step 3: Complete the Assignment
 
-Open `Check_for_Understanding.ipynb` and work through the exercises.
+Open `Check_for_Understanding.ipynb` and add your answers to all exercises.
 
-### 3. Stop the Notebook
+When finished, save your notebook (Ctrl+S or File → Save).
 
-Press `Ctrl+C` in the terminal, then run:
+Stop the server with `Ctrl+C`, then:
 
 ```bash
 docker-compose down
 ```
 
-## Submitting Your Assignment
+## Step 4: Push Your Answers
 
-1. Save your notebook in Jupyter (Ctrl+S or File → Save)
-2. Stop the Docker container
-3. Submit the `Check_for_Understanding.ipynb` file
+Commit and push your completed notebook to your forked repository:
 
+```bash
+git add .
+git commit -m "Completed prework assignment"
+git push origin main
+```
+
+## Step 5: Submit on the Gauntlet Portal
+
+1. Go to **[portal.gauntletai.com](https://portal.gauntletai.com)**
+2. Submit the link to your forked repository
