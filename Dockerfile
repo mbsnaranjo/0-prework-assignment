@@ -2,8 +2,8 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install Jupyter
-RUN pip install --no-cache-dir jupyter
+# Install Jupyter, PyTorch, and NumPy
+RUN pip install --no-cache-dir jupyter torch numpy
 
 # Copy notebook files
 COPY . .
